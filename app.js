@@ -2,18 +2,13 @@
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {'packages':['corechart']});
 
+// APP SCOPE DATA AND CONSTANTS
 var databaseUrl = 'https://www.quandl.com/api/v3/datasets/GOOG/';
 var jsonExt = '.json';
 var urlOptions = '?api_key=BK7rxeeuPK-tz8TMEf4B&column_index=4&start_date=2010-01-01&order=asc'
-var spyTkr = 'NYSE_SPY';
-var googTkr = 'NASDAQ_GOOG';
-var baTkr = 'NYSE_BA';
-var fTkr = 'NYSE_F';
-var vzTkr = 'NYSE_VZ';
-var geTkr = 'NYSE_GE';
 
-
-var portfolio = {
+var userPortfolio = new Portfolio({
+  name: 'User Portfolio',
   initialCash: 1000000,
   companies: [
     'NASDAQ_GOOG',
@@ -21,113 +16,152 @@ var portfolio = {
     'NYSE_F',
     'NYSE_VZ',
     'NYSE_GE'
-  ],
-  shares: {},
-  spyShares: 0,
-  performance: []
-}
+  ]
+});
 
-var sharePrices = {};
+var spyPortfolio = new Portfolio({
+  name: 'S&P',
+  initialCash: 1000000,
+  companies: [
+    'NYSE_SPY'
+  ]
+});
 
-processPortfolio();
+var sharePrices = {}; // file scoped object to hold the stockData
 
-function processPortfolio() {
-  $.when( getPortfolioData( portfolio ) ).then(
+// EXECUTION
+processPortfolios(userPortfolio, spyPortfolio);
+
+function processPortfolios(...portfolios) {
+  var companies = portfolios.reduce((p,x) => p.concat(x.companies), []);
+  $.when( getStockData( companies ) ).then(
     function() {
-      buyInitialShares( portfolio );
-      calculatePerformance( portfolio );
-      drawChart( portfolio );
+      for (var p = 0, pLen = portfolios.length; p < pLen; p++) {
+        var portfolio = portfolios[p];
+        portfolio.buyInitialShares();
+        portfolio.calculatePerformance();
+      }
+      google.charts.setOnLoadCallback(drawPortfolioComparisonChart.bind(null, portfolios));
     }
   );
 }
 
-function calculatePerformance(p) {
-  var tkrCnt = {};
-  p.companies.map(function(cmp) {tkrCnt[cmp] = 0;});
-  tkrCnt[spyTkr] = 0;
-
-  var currDate = "2010-01-01";
-  var done = false;
-  while (!done) {
-    var moneyAtDate = 0;
-    var nextDate = Infinity;
-    done = true;
-    for (var c = 0, cLen = p.companies.length; c < cLen; c++) {
-      var tkr = p.companies[c];
-      var i = tkrCnt[tkr];
-      var shareDate = sharePrices[tkr].data[i][0]
-      if (shareDate <= currDate) {
-        moneyAtDate += (p.shares[tkr] * sharePrices[tkr].data[i][1]);
-        tkrCnt[tkr]++;
-        if (tkrCnt[tkr] < sharePrices[tkr].data.length) {
-          done = false;
-          nextDate = (sharePrices[tkr].data[tkrCnt[tkr]][0] > nextDate ? nextDate : sharePrices[tkr].data[tkrCnt[tkr]][0]); // next date is the earliest of the companies next share dates
-        }
-      }
-    }
-
-    while (sharePrices[spyTkr].data[tkrCnt[spyTkr]][0] < currDate) tkrCnt[spyTkr]++;
-
-    if (tkrCnt[spyTkr] >= sharePrices[spyTkr].data.length) break;
-
-    p.performance.push([currDate, moneyAtDate, p.spyShares * sharePrices[spyTkr].data[tkrCnt[spyTkr]][1]]);
-    currDate = nextDate;
-  }
+// Portfolio class and methods
+function Portfolio(opts) {
+  this.name = '';
+  this.initialCash = 0;
+  this.companies = [];
+  this.shares = {};
+  this.performance = [];
+  Object.assign(this, opts);
 }
 
-function buyInitialShares(p) {
-  for (var c = 0, cLen = p.companies.length; c < cLen; c++) {
-    var tkr = p.companies[c];
+Portfolio.prototype.calculatePerformance = function calculatePerformance() {
+  var mergedData = mergeStockData(this.companies.map((x) => sharePrices[x].data));
+  this.performance = mergedData.map((row) => [(new Date(row[0])), row.slice(1).reduce((p, x, i) => this.shares[this.companies[i]] * x + p, 0)]);
+};
+
+Portfolio.prototype.buyInitialShares = function buyInitialShares() {
+  for (var c = 0, cLen = this.companies.length; c < cLen; c++) {
+    var tkr = this.companies[c];
     var initialSharePrice = sharePrices[tkr].data[0][1];
-    p.shares[tkr] = Math.floor((p.initialCash / cLen) / initialSharePrice);
+    this.shares[tkr] = Math.floor((this.initialCash / cLen) / initialSharePrice);
   }
-  p.spyShares = Math.floor(p.initialCash / sharePrices[spyTkr].data[0][1]);
-}
+};
 
-function getPortfolioData(p) {
+// functions to get the stock data from Quandl servers
+function getStockData( companies ) {
   var dfd = $.Deferred();
 
-  var numUrls = p.companies.length + 1; //plus 1 for the spy request
+  var numRequests = companies.length;
   function addData(data) {
     sharePrices[data.dataset.dataset_code] = data.dataset;
-    if (--numUrls === 0) {
+    if (--numRequests === 0) {
       dfd.resolve(sharePrices);
     }
   }
-  getQuandlDataset(spyTkr, addData);
-  for (var i = 0; i < p.companies.length; i++) {
-    var tkr = p.companies[i];
+  for (var i = 0; i < companies.length; i++) {
+    var tkr = companies[i];
     getQuandlDataset(tkr, addData);
   }
 
   return dfd.promise();
-}
+};
 
 function getQuandlDataset(tkr, callback) {
   console.log('getQuandlDataset ' + tkr);
   $.getJSON(databaseUrl + tkr + jsonExt + urlOptions, null, callback);
 }
 
-// Set a callback to run when the Google Visualization API is loaded.
-// google.charts.setOnLoadCallback(drawChart.call(null, data.dataset));
+// some stock data has different time stamps, this will sync the data to share the same time stamps
+function mergeStockData(stockData) {
+  if (stockData.length === 1) {
+    return stockData[0];
+  }
+  function ltDate(a, b) {
+    return (a >= b ? b : a); // >= because comparing strings with a non string is always false
+  }
 
-function drawChart(p) {
-  console.log(p);
-  var data = google.visualization.arrayToDataTable([
-    ['Date', 'Money', 'S&P'],
-    ...p.performance
-  ]);
+  //first row can have stockData from future dates
+  var currDate = stockData.reduce((p,x) => ltDate(x[0][0], p));
+  var stockDataM = [[currDate, ...stockData.map((x) => x[0][1])]]; //first row of merged stockData is the first element of each stockData
+
+  var cnt = Array(stockData.length).fill(1);
+  var done = false;
+  var currDate = stockData.reduce((p,x) => ltDate(x[1][0], p)); //set current date to earliest of second row
+  while (!done) {
+    done = true;
+    var nextDate = Infinity;
+    var stockDataRowM = [currDate];
+    for ( var i = 0, len = stockData.length; i < len; i++ ) {
+      var stockDataRowI = stockData[i][cnt[i]];
+      var date = stockDataRowI[0];
+      if (date <= currDate) {
+        stockDataRowM.push(stockDataRowI[1]);
+        cnt[i]++;
+        if (cnt[i] < stockData[i].length) {
+          done = false;
+          nextDate = ltDate(stockData[i][cnt[i]][0], nextDate);
+        }
+      } else {
+        stockDataRowM.push(stockData[i][cnt[i] - 1][1]);
+      }
+    }
+    stockDataM.push(stockDataRowM);
+    currDate = nextDate;
+  }
+
+  return stockDataM;
+}
+
+// Set a callback to run when the Google Visualization API is loaded.
+// google.charts.setOnLoadCallback(drawPortfolioComparisonChart.call(null, data.dataset));
+
+
+
+function drawPortfolioComparisonChart(portfolios) {
+  var mergedData = mergeStockData(portfolios.map((x) => x.performance));
+  console.log(mergedData);
+  var data = new google.visualization.DataTable();
+  data.addColumn('date', 'Date');
+  portfolios.map((x) => data.addColumn('number', x.name));
+  data.addRows(mergedData);
+  // var data = google.visualization.arrayToDataTable([
+    // ['Date', ...portfolios.map((x) => x.name)],
+    // ...mergedData
+  // ]);
 
   var options = {
-    title: 'NYSE SPY',
+    title: 'Portfolio Comparison',
     legend: { position: 'bottom' },
     animation: {
       startup: true,
-      duration: 1000
+      duration: 1000,
+      easing: 'out'
     }
   };
 
-  var chart = new google.visualization.LineChart(document.getElementById('spy_chart'));
+  var chart = new google.visualization.LineChart(document.getElementById('portfolio_comparison_chart'));
 
   chart.draw(data, options);
 }
