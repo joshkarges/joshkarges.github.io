@@ -120,7 +120,11 @@ function drawChart(p) {
 
   var options = {
     title: 'NYSE SPY',
-    legend: { position: 'bottom' }
+    legend: { position: 'bottom' },
+    animation: {
+      startup: true,
+      duration: 1000
+    }
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('spy_chart'));
