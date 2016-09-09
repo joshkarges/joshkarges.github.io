@@ -30,7 +30,18 @@ var spyPortfolio = new Portfolio({
 var sharePrices = {}; // file scoped object to hold the stockData
 
 // EXECUTION
-processPortfolios(userPortfolio, spyPortfolio);
+
+//BIND EXECUTION TO BUTTON
+$(document).ready(function() {
+  processPortfolios(userPortfolio, spyPortfolio);
+  $('#run_button').click(function() {
+    var userCompanies = $('#tkr_text').val().match(/([a-zA-Z_]+)/g).map((x) => x.trim().toUpperCase());
+    console.log(userCompanies);
+    userPortfolio.companies = userCompanies;
+    processPortfolios(userPortfolio, spyPortfolio);
+
+  });
+});
 
 function processPortfolios(...portfolios) {
   var companies = portfolios.reduce((p,x) => p.concat(x.companies), []);
@@ -56,11 +67,13 @@ function Portfolio(opts) {
   Object.assign(this, opts);
 }
 
+// Calculate the monetary value of the portfolio over time
 Portfolio.prototype.calculatePerformance = function calculatePerformance() {
   var mergedData = mergeStockData(this.companies.map((x) => sharePrices[x].data));
   this.performance = mergedData.map((row) => [(new Date(row[0])), row.slice(1).reduce((p, x, i) => this.shares[this.companies[i]] * x + p, 0)]);
 };
 
+// Calculate how many shares of each company the portfolio initially buys
 Portfolio.prototype.buyInitialShares = function buyInitialShares() {
   for (var c = 0, cLen = this.companies.length; c < cLen; c++) {
     var tkr = this.companies[c];
