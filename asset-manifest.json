@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.b2e5d627.chunk.css",
-    "main.js": "/static/js/main.fba23da9.chunk.js",
-    "main.js.map": "/static/js/main.fba23da9.chunk.js.map",
+    "main.js": "/static/js/main.71246200.chunk.js",
+    "main.js.map": "/static/js/main.71246200.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
     "static/js/2.a3f56af9.chunk.js": "/static/js/2.a3f56af9.chunk.js",
     "static/js/2.a3f56af9.chunk.js.map": "/static/js/2.a3f56af9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.428f357cf290cc24fb5491baa514322c.js": "/precache-manifest.428f357cf290cc24fb5491baa514322c.js",
+    "precache-manifest.ba980a6f38a4693e9a1768cca8cf6c15.js": "/precache-manifest.ba980a6f38a4693e9a1768cca8cf6c15.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.b2e5d627.chunk.css.map": "/static/css/main.b2e5d627.chunk.css.map",
     "static/js/2.a3f56af9.chunk.js.LICENSE.txt": "/static/js/2.a3f56af9.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/AngelicBonquesScript.68ab2671.otf",
-    "static/media/tykargesLogo.e137fba1.svg": "/static/media/tykargesLogo.e137fba1.svg"
+    "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
     "static/js/2.a3f56af9.chunk.js",
     "static/css/main.b2e5d627.chunk.css",
-    "static/js/main.fba23da9.chunk.js"
+    "static/js/main.71246200.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f12db1c4d7fb125e6db1e1a83fd6053d",
+    "revision": "e24ef153c1214a2a5e8674ab1a806a10",
     "url": "/index.html"
   },
   {
-    "revision": "50d593d2a73b72c2fba4",
+    "revision": "a13434a573c7a32fd413",
     "url": "/static/css/main.b2e5d627.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.a3f56af9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50d593d2a73b72c2fba4",
-    "url": "/static/js/main.fba23da9.chunk.js"
+    "revision": "a13434a573c7a32fd413",
+    "url": "/static/js/main.71246200.chunk.js"
   },
   {
     "revision": "739694a59e9d5a99c62e",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AngelicBonquesScript.68ab2671.otf"
   },
   {
-    "revision": "e137fba1e1e120660ff2e3013c67ebdc",
-    "url": "/static/media/tykargesLogo.e137fba1.svg"
+    "revision": "932748bd48553c032b4d2cc7b7545a71",
+    "url": "/static/media/tykargesLogo.932748bd.svg"
   }
 ]);
