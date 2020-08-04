@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2e5d627.chunk.css",
-    "main.js": "/static/js/main.71246200.chunk.js",
-    "main.js.map": "/static/js/main.71246200.chunk.js.map",
+    "main.css": "/static/css/main.7e05bc39.chunk.css",
+    "main.js": "/static/js/main.164ed7bf.chunk.js",
+    "main.js.map": "/static/js/main.164ed7bf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
-    "static/js/2.a3f56af9.chunk.js": "/static/js/2.a3f56af9.chunk.js",
-    "static/js/2.a3f56af9.chunk.js.map": "/static/js/2.a3f56af9.chunk.js.map",
+    "static/js/2.3905bd12.chunk.js": "/static/js/2.3905bd12.chunk.js",
+    "static/js/2.3905bd12.chunk.js.map": "/static/js/2.3905bd12.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba980a6f38a4693e9a1768cca8cf6c15.js": "/precache-manifest.ba980a6f38a4693e9a1768cca8cf6c15.js",
+    "precache-manifest.b28a9960515586810a5c5084ecff8500.js": "/precache-manifest.b28a9960515586810a5c5084ecff8500.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b2e5d627.chunk.css.map": "/static/css/main.b2e5d627.chunk.css.map",
-    "static/js/2.a3f56af9.chunk.js.LICENSE.txt": "/static/js/2.a3f56af9.chunk.js.LICENSE.txt",
+    "static/css/main.7e05bc39.chunk.css.map": "/static/css/main.7e05bc39.chunk.css.map",
+    "static/js/2.3905bd12.chunk.js.LICENSE.txt": "/static/js/2.3905bd12.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/AngelicBonquesScript.68ab2671.otf",
-    "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg"
+    "static/media/facebookLogo.4c9202ac.svg": "/static/media/facebookLogo.4c9202ac.svg",
+    "static/media/houzzLogo.6a5db6b4.svg": "/static/media/houzzLogo.6a5db6b4.svg",
+    "static/media/instagramLogo.fe40dbb7.svg": "/static/media/instagramLogo.fe40dbb7.svg",
+    "static/media/sloMoDogBeach.mp4": "/static/media/sloMoDogBeach.cc10fbde.mp4",
+    "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg",
+    "static/media/yelpLogo.eee4b5b6.svg": "/static/media/yelpLogo.eee4b5b6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
-    "static/js/2.a3f56af9.chunk.js",
-    "static/css/main.b2e5d627.chunk.css",
-    "static/js/main.71246200.chunk.js"
+    "static/js/2.3905bd12.chunk.js",
+    "static/css/main.7e05bc39.chunk.css",
+    "static/js/main.164ed7bf.chunk.js"
   ]
 }
