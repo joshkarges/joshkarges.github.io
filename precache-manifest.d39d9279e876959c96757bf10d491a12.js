@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a76a6280d6e57c674f51eff3989b72d",
+    "revision": "b98dfaac1b13fcaf80722fe8d3421dea",
     "url": "/index.html"
   },
   {
-    "revision": "6e15291073470e52c557",
-    "url": "/static/css/main.7e05bc39.chunk.css"
+    "revision": "e37d3b72c9bd4dee8fdd",
+    "url": "/static/css/main.bb05284c.chunk.css"
   },
   {
-    "revision": "42e6ef740fd7b0d94b42",
-    "url": "/static/js/2.e0c03327.chunk.js"
+    "revision": "a9c152e3eb3ebd47d0b0",
+    "url": "/static/js/2.c86cb442.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/static/js/2.e0c03327.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c86cb442.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e15291073470e52c557",
-    "url": "/static/js/main.eda6be8f.chunk.js"
+    "revision": "e37d3b72c9bd4dee8fdd",
+    "url": "/static/js/main.502ca0b5.chunk.js"
   },
   {
     "revision": "739694a59e9d5a99c62e",
@@ -36,6 +36,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AngelicBonquesScript.68ab2671.otf"
   },
   {
+    "revision": "8b6af8e5e8324edfd77af8b3b35d7f9c",
+    "url": "/static/media/Poppins-Regular.8b6af8e5.ttf"
+  },
+  {
+    "revision": "be76c23aa3fce799130095342ab3fd97",
+    "url": "/static/media/aboutPage1.be76c23a.png"
+  },
+  {
     "revision": "4c9202acb40714fbd14f59a8ac7154cb",
     "url": "/static/media/facebookLogo.4c9202ac.svg"
   },
@@ -48,8 +56,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagramLogo.fe40dbb7.svg"
   },
   {
+    "revision": "27412d13380bf0db89fd244d7896b10f",
+    "url": "/static/media/servicesPage1.27412d13.png"
+  },
+  {
+    "revision": "3c54a92161adc8252345ed29d8d0d55d",
+    "url": "/static/media/servicesPage2.3c54a921.png"
+  },
+  {
+    "revision": "25d4645c847fe31df97c6af0d2ac0c73",
+    "url": "/static/media/servicesPage3.25d4645c.png"
+  },
+  {
     "revision": "cc10fbded6e36974d78821740d89bbf7",
     "url": "/static/media/sloMoDogBeach.cc10fbde.mp4"
+  },
+  {
+    "revision": "dfd69de143114bd177637ee8b171de5c",
+    "url": "/static/media/threeLineMenuIcon.dfd69de1.svg"
   },
   {
     "revision": "932748bd48553c032b4d2cc7b7545a71",

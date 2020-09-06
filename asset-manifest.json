@@ -1,29 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e05bc39.chunk.css",
-    "main.js": "/static/js/main.eda6be8f.chunk.js",
-    "main.js.map": "/static/js/main.eda6be8f.chunk.js.map",
+    "main.css": "/static/css/main.bb05284c.chunk.css",
+    "main.js": "/static/js/main.502ca0b5.chunk.js",
+    "main.js.map": "/static/js/main.502ca0b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
-    "static/js/2.e0c03327.chunk.js": "/static/js/2.e0c03327.chunk.js",
-    "static/js/2.e0c03327.chunk.js.map": "/static/js/2.e0c03327.chunk.js.map",
+    "static/js/2.c86cb442.chunk.js": "/static/js/2.c86cb442.chunk.js",
+    "static/js/2.c86cb442.chunk.js.map": "/static/js/2.c86cb442.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0fa47255b9ac431c032f79de42b67aeb.js": "/precache-manifest.0fa47255b9ac431c032f79de42b67aeb.js",
+    "precache-manifest.d39d9279e876959c96757bf10d491a12.js": "/precache-manifest.d39d9279e876959c96757bf10d491a12.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7e05bc39.chunk.css.map": "/static/css/main.7e05bc39.chunk.css.map",
-    "static/js/2.e0c03327.chunk.js.LICENSE.txt": "/static/js/2.e0c03327.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/AngelicBonquesScript.68ab2671.otf",
+    "static/css/main.bb05284c.chunk.css.map": "/static/css/main.bb05284c.chunk.css.map",
+    "static/js/2.c86cb442.chunk.js.LICENSE.txt": "/static/js/2.c86cb442.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Poppins-Regular.8b6af8e5.ttf",
+    "static/media/aboutPage1.png": "/static/media/aboutPage1.be76c23a.png",
     "static/media/facebookLogo.4c9202ac.svg": "/static/media/facebookLogo.4c9202ac.svg",
     "static/media/houzzLogo.6a5db6b4.svg": "/static/media/houzzLogo.6a5db6b4.svg",
     "static/media/instagramLogo.fe40dbb7.svg": "/static/media/instagramLogo.fe40dbb7.svg",
+    "static/media/servicesPage1.png": "/static/media/servicesPage1.27412d13.png",
+    "static/media/servicesPage2.png": "/static/media/servicesPage2.3c54a921.png",
+    "static/media/servicesPage3.png": "/static/media/servicesPage3.25d4645c.png",
     "static/media/sloMoDogBeach.mp4": "/static/media/sloMoDogBeach.cc10fbde.mp4",
+    "static/media/threeLineMenuIcon.dfd69de1.svg": "/static/media/threeLineMenuIcon.dfd69de1.svg",
     "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg",
     "static/media/yelpLogo.eee4b5b6.svg": "/static/media/yelpLogo.eee4b5b6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
-    "static/js/2.e0c03327.chunk.js",
-    "static/css/main.7e05bc39.chunk.css",
-    "static/js/main.eda6be8f.chunk.js"
+    "static/js/2.c86cb442.chunk.js",
+    "static/css/main.bb05284c.chunk.css",
+    "static/js/main.502ca0b5.chunk.js"
   ]
 }
