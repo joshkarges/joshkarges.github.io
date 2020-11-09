@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45cbaa7bf874d5f2a3c22150ce0f61bf",
+    "revision": "a4900ced47783f0c58e1dda48ab4f3a1",
     "url": "/index.html"
   },
   {
-    "revision": "1f063c0cefd9cb63b978",
+    "revision": "00df6f50886da660bdbc",
     "url": "/static/css/main.7e05bc39.chunk.css"
   },
   {
-    "revision": "ae93b277ec166bb539a5",
-    "url": "/static/js/2.eea97522.chunk.js"
+    "revision": "b9b0bd355e7e799e2784",
+    "url": "/static/js/2.f3f35ed2.chunk.js"
   },
   {
     "revision": "885c0e205ef5e79f4aef448a818ba6a1",
-    "url": "/static/js/2.eea97522.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f3f35ed2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f063c0cefd9cb63b978",
-    "url": "/static/js/main.41daa0bc.chunk.js"
+    "revision": "00df6f50886da660bdbc",
+    "url": "/static/js/main.248b70a0.chunk.js"
   },
   {
     "revision": "739694a59e9d5a99c62e",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fe40dbb7c46a1dbf44d27dfea39c2936",
     "url": "/static/media/instagramLogo.fe40dbb7.svg"
+  },
+  {
+    "revision": "db22b9bd45d32290acebf071922105bf",
+    "url": "/static/media/longArrowRight.db22b9bd.svg"
   },
   {
     "revision": "379b15a740c2e66e84b9972287552a6a",
