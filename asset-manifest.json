@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2ff9a5b4.chunk.css",
-    "main.js": "/static/js/main.a6331da3.chunk.js",
-    "main.js.map": "/static/js/main.a6331da3.chunk.js.map",
+    "main.js": "/static/js/main.6607e8b1.chunk.js",
+    "main.js.map": "/static/js/main.6607e8b1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.eea52687.chunk.js": "/static/js/2.eea52687.chunk.js",
-    "static/js/2.eea52687.chunk.js.map": "/static/js/2.eea52687.chunk.js.map",
+    "static/js/2.689b08db.chunk.js": "/static/js/2.689b08db.chunk.js",
+    "static/js/2.689b08db.chunk.js.map": "/static/js/2.689b08db.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d157045dcd6f7e99ae3868c1940ad1ae.js": "/precache-manifest.d157045dcd6f7e99ae3868c1940ad1ae.js",
+    "precache-manifest.f7703f087395dbe1031c82977051493e.js": "/precache-manifest.f7703f087395dbe1031c82977051493e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.2ff9a5b4.chunk.css.map": "/static/css/main.2ff9a5b4.chunk.css.map",
-    "static/js/2.eea52687.chunk.js.LICENSE.txt": "/static/js/2.eea52687.chunk.js.LICENSE.txt",
+    "static/js/2.689b08db.chunk.js.LICENSE.txt": "/static/js/2.689b08db.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.854445f2.png",
     "static/media/2_16by9.jpg": "/static/media/2_16by9.eaddf882.jpg",
     "static/media/3_16by9.jpg": "/static/media/3_16by9.144802c7.jpg",
@@ -48,15 +48,14 @@
     "static/media/portfolio4.jpg": "/static/media/portfolio4.d4c38018.jpg",
     "static/media/portfolio5.jpg": "/static/media/portfolio5.bac994aa.jpg",
     "static/media/servicesPage4.png": "/static/media/servicesPage4.57a55473.png",
-    "static/media/sloMoDogBeach.mp4": "/static/media/sloMoDogBeach.cc10fbde.mp4",
     "static/media/threeLineMenuIcon.dfd69de1.svg": "/static/media/threeLineMenuIcon.dfd69de1.svg",
     "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.eea52687.chunk.js",
+    "static/js/2.689b08db.chunk.js",
     "static/css/main.2ff9a5b4.chunk.css",
-    "static/js/main.a6331da3.chunk.js"
+    "static/js/main.6607e8b1.chunk.js"
   ]
 }
