@@ -1,26 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.2ff9a5b4.chunk.css",
-    "main.js": "/static/js/main.35ce5f29.chunk.js",
-    "main.js.map": "/static/js/main.35ce5f29.chunk.js.map",
+    "main.js": "/static/js/main.fdb3e337.chunk.js",
+    "main.js.map": "/static/js/main.fdb3e337.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.d81d4b08.chunk.js": "/static/js/2.d81d4b08.chunk.js",
-    "static/js/2.d81d4b08.chunk.js.map": "/static/js/2.d81d4b08.chunk.js.map",
+    "static/js/2.286d7431.chunk.js": "/static/js/2.286d7431.chunk.js",
+    "static/js/2.286d7431.chunk.js.map": "/static/js/2.286d7431.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a2b7a6603010e63441051c37e1dbc167.js": "/precache-manifest.a2b7a6603010e63441051c37e1dbc167.js",
+    "precache-manifest.4a4e5eb032f03782401b5f0733c44ba1.js": "/precache-manifest.4a4e5eb032f03782401b5f0733c44ba1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.2ff9a5b4.chunk.css.map": "/static/css/main.2ff9a5b4.chunk.css.map",
-    "static/js/2.d81d4b08.chunk.js.LICENSE.txt": "/static/js/2.d81d4b08.chunk.js.LICENSE.txt",
-    "static/media/1.png": "/static/media/1.854445f2.png",
-    "static/media/2_16by9.jpg": "/static/media/2_16by9.eaddf882.jpg",
-    "static/media/3_16by9.jpg": "/static/media/3_16by9.144802c7.jpg",
-    "static/media/4_16by9.jpg": "/static/media/4_16by9.5469df96.jpg",
-    "static/media/6_16by9.jpg": "/static/media/6_16by9.b3c3f6f5.jpg",
-    "static/media/7_16by9.jpg": "/static/media/7_16by9.7fe5f4d6.jpg",
-    "static/media/8_16by9.jpg": "/static/media/8_16by9.13250555.jpg",
+    "static/js/2.286d7431.chunk.js.LICENSE.txt": "/static/js/2.286d7431.chunk.js.LICENSE.txt",
+    "static/media/1_BlackText.jpg": "/static/media/1_BlackText.7139557e.jpg",
+    "static/media/2_BlackText.jpg": "/static/media/2_BlackText.4ce1b8c6.jpg",
+    "static/media/3.jpg": "/static/media/3.840f300c.jpg",
+    "static/media/4.jpg": "/static/media/4.74e5b8f3.jpg",
+    "static/media/6.jpg": "/static/media/6.57189181.jpg",
     "static/media/App.css": "/static/media/AngelicBonquesScript.68ab2671.otf",
     "static/media/Bathroom.gif": "/static/media/Bathroom.22ac7111.gif",
     "static/media/Bathroom.png": "/static/media/Bathroom.e50a8d94.png",
@@ -54,8 +52,8 @@
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.d81d4b08.chunk.js",
+    "static/js/2.286d7431.chunk.js",
     "static/css/main.2ff9a5b4.chunk.css",
-    "static/js/main.35ce5f29.chunk.js"
+    "static/js/main.fdb3e337.chunk.js"
   ]
 }
