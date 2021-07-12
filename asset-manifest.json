@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2ff9a5b4.chunk.css",
-    "main.js": "/static/js/main.e71a7319.chunk.js",
-    "main.js.map": "/static/js/main.e71a7319.chunk.js.map",
+    "main.js": "/static/js/main.52a2ae3e.chunk.js",
+    "main.js.map": "/static/js/main.52a2ae3e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.25147336.chunk.js": "/static/js/2.25147336.chunk.js",
-    "static/js/2.25147336.chunk.js.map": "/static/js/2.25147336.chunk.js.map",
+    "static/js/2.47e28a52.chunk.js": "/static/js/2.47e28a52.chunk.js",
+    "static/js/2.47e28a52.chunk.js.map": "/static/js/2.47e28a52.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7e04936b3d7e57c628a4ffcc47cadf1f.js": "/precache-manifest.7e04936b3d7e57c628a4ffcc47cadf1f.js",
+    "precache-manifest.3a267e6b62adf497a69e9d7469968d45.js": "/precache-manifest.3a267e6b62adf497a69e9d7469968d45.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.2ff9a5b4.chunk.css.map": "/static/css/main.2ff9a5b4.chunk.css.map",
-    "static/js/2.25147336.chunk.js.LICENSE.txt": "/static/js/2.25147336.chunk.js.LICENSE.txt",
+    "static/js/2.47e28a52.chunk.js.LICENSE.txt": "/static/js/2.47e28a52.chunk.js.LICENSE.txt",
     "static/media/1-MLS (10).jpg": "/static/media/1-MLS (10).e4acdfa2.jpg",
     "static/media/1-dining.jpg": "/static/media/1-dining.7fdf5fc9.jpg",
     "static/media/1_BlackText.jpg": "/static/media/1_BlackText.7139557e.jpg",
@@ -52,6 +52,7 @@
     "static/media/aboutPage3.jpg": "/static/media/aboutPage3.bc840033.jpg",
     "static/media/contactPage1.png": "/static/media/contactPage1.f9be08b4.png",
     "static/media/homeStaging.png": "/static/media/homeStaging.34eedeb1.png",
+    "static/media/houzzLogo.47acd917.svg": "/static/media/houzzLogo.47acd917.svg",
     "static/media/instagramLogo.fe40dbb7.svg": "/static/media/instagramLogo.fe40dbb7.svg",
     "static/media/instantHome.png": "/static/media/instantHome.b003f637.png",
     "static/media/kitchen1.jpg": "/static/media/kitchen1.5971a2e1.jpg",
@@ -65,8 +66,8 @@
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.25147336.chunk.js",
+    "static/js/2.47e28a52.chunk.js",
     "static/css/main.2ff9a5b4.chunk.css",
-    "static/js/main.e71a7319.chunk.js"
+    "static/js/main.52a2ae3e.chunk.js"
   ]
 }
