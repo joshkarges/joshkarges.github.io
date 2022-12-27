@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d4a13aa.chunk.css",
-    "main.js": "/static/js/main.7265c424.chunk.js",
-    "main.js.map": "/static/js/main.7265c424.chunk.js.map",
+    "main.css": "/static/css/main.cd76ec18.chunk.css",
+    "main.js": "/static/js/main.14513f60.chunk.js",
+    "main.js.map": "/static/js/main.14513f60.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6767be66.js",
     "runtime-main.js.map": "/static/js/runtime-main.6767be66.js.map",
     "static/css/2.451bf2e4.chunk.css": "/static/css/2.451bf2e4.chunk.css",
-    "static/js/2.e62acf71.chunk.js": "/static/js/2.e62acf71.chunk.js",
-    "static/js/2.e62acf71.chunk.js.map": "/static/js/2.e62acf71.chunk.js.map",
+    "static/js/2.94d9c751.chunk.js": "/static/js/2.94d9c751.chunk.js",
+    "static/js/2.94d9c751.chunk.js.map": "/static/js/2.94d9c751.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bfc587eadc3b604b307d4ff8d9dbf974.js": "/precache-manifest.bfc587eadc3b604b307d4ff8d9dbf974.js",
+    "precache-manifest.c51cdffb8a9f2285650b9bc38019059a.js": "/precache-manifest.c51cdffb8a9f2285650b9bc38019059a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.451bf2e4.chunk.css.map": "/static/css/2.451bf2e4.chunk.css.map",
-    "static/css/main.9d4a13aa.chunk.css.map": "/static/css/main.9d4a13aa.chunk.css.map",
-    "static/js/2.e62acf71.chunk.js.LICENSE.txt": "/static/js/2.e62acf71.chunk.js.LICENSE.txt",
+    "static/css/main.cd76ec18.chunk.css.map": "/static/css/main.cd76ec18.chunk.css.map",
+    "static/js/2.94d9c751.chunk.js.LICENSE.txt": "/static/js/2.94d9c751.chunk.js.LICENSE.txt",
     "static/media/1-MLS (10).jpg": "/static/media/1-MLS (10).e4acdfa2.jpg",
     "static/media/1-dining.jpg": "/static/media/1-dining.7fdf5fc9.jpg",
     "static/media/1_DSC00650.jpg": "/static/media/1_DSC00650.b000e280.jpg",
@@ -68,14 +68,15 @@
     "static/media/portfolio4.jpg": "/static/media/portfolio4.d4c38018.jpg",
     "static/media/portfolio5.jpg": "/static/media/portfolio5.bac994aa.jpg",
     "static/media/servicesPage4.png": "/static/media/servicesPage4.57a55473.png",
+    "static/media/sloMoDogBeach.mp4": "/static/media/sloMoDogBeach.cc10fbde.mp4",
     "static/media/threeLineMenuIcon.dfd69de1.svg": "/static/media/threeLineMenuIcon.dfd69de1.svg",
     "static/media/tykargesLogo.932748bd.svg": "/static/media/tykargesLogo.932748bd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6767be66.js",
     "static/css/2.451bf2e4.chunk.css",
-    "static/js/2.e62acf71.chunk.js",
-    "static/css/main.9d4a13aa.chunk.css",
-    "static/js/main.7265c424.chunk.js"
+    "static/js/2.94d9c751.chunk.js",
+    "static/css/main.cd76ec18.chunk.css",
+    "static/js/main.14513f60.chunk.js"
   ]
 }
